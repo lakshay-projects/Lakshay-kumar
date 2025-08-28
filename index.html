@@ -69,6 +69,18 @@
     <p>© 2025 Your Name. All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Smooth scroll effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+  
+  // Simple console log
+  console.log("Portfolio website loaded successfully 🚀");
+  </script>
 </body>
 </html>
